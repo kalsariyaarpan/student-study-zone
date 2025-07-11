@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <style>
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+    body {
+      
+      margin: 0;
+      padding: 0;
+     font-family: Arial, sans-serif;
+      background-color: #f4f4f9; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: auto;
+      background: linear-gradient(135deg, #1c1c1e, #313133);
+    }
+    p{
+        color: #abdcdd;
+    }
+    .main-container {
+      background: #a3a3a3;
+      padding: 30px;
+      margin: 30px;
+      border-radius: 20px;
+      width: 300px;
+      text-align: center;
+    }
+    .main-container  {
+      margin-bottom: 20px;
+      color: #333;
+    /* box-shadow: 10px 8px 9px  rgba(255, 255, 255, 0.1); */
+    
+      background: #222;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 234, 0.1);
+      width: 400px;
+      position: relative;
+      animation: slideIn 0.6s ease;
+    
+
+
+    }
+    .main-container input {
+      /* width: 100%; */
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #000000;
+        width: -webkit-fill-available;
+      border-radius: 20px;
+      
+    }
+    .main-container button {
+      background-color: #10a3d7;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      width: 100%;
+        
+    }
+    h2{
+       width: 60%;
+       margin: auto;
+        color: aqua;
+        margin-bottom: 20px; 
+        
+    }
+    
+    h2:hover{
+           color:#5181c9; 
+           transition: 0.30s; 
+
+    }
+    
+    .main-container a {
+      display: block;
+      margin-top: 20px;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .main-container a:hover {
+      text-decoration: underline;
+    }
+    
+    .about-container p{ 
+        display: ruby-text;
+    }
+
+
+    .input-container{
+
+        display: flex;
+    }
+</style>
+</head>
+<body>
+  <div class="main-container">
+    <h2>Create Acccount</h2>
+    <div class="about-container">
+    <p>Already have an Account ?
+    <a href="login.html">Sign in</a>
+   </p> 
+</div>
+
+    <form action="/reset-password" method="POST">
+      <input type="text" name="username " placeholder="Username" required>
+      <div class="input-container">
+      <input type="text" name="First Name" placeholder="First Name" required>
+      <input type="text" name="Last Name" placeholder="Last Name" required>
+      </div>
+      
+      <input type="email" name="email" placeholder="Email" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    
+  </div>
+</body>
+</html>

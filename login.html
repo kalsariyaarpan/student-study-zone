@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1c1c1e, #313133);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-container {
+      background: #222;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 234, 0.1);
+      width: 400px;
+      position: relative;
+      animation: slideIn 0.6s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .login-container h2 {
+      color:#10a3d7;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .input-container {
+      margin-bottom: 20px;
+    }
+
+    .input-container label {
+      color: #ccc;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .input-container input {
+      width: 100%;
+      padding: 12px 15px;
+      border: none;
+      border-radius: 10px;
+      background: #333;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    /* .input-container input:focus {
+      outline: 2px solid #00ffe0;
+    } */
+
+    .login-button {
+      width: 100%;
+      padding: 12px;
+      background:#10a3d7;
+      color: #1a1a1a;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.5s ease;
+    }
+
+    .login-button:hover {
+      background:#10a3d7;
+    }
+
+    .extras {
+      text-align: center;
+      
+      margin-top: 10px;
+      
+    }
+
+    .extras a {
+      color: #10a3d7;
+      font-size: 13px;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .extras a:hover {
+      color:#10a3d7;
+    }
+
+    .floating-bg {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background:#10a3d7;
+      border-radius: 50%;
+      top: -30px;
+      right: -30px;
+      filter: blur(80px);
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="floating-bg"></div>
+    
+    <h2>Hello    student</h2>
+    <form action="#" method="post" class="php-email-form">
+      <div class="input-container">
+        <label for="username">Username or Email</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div class="input-container">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <div class="input-container">
+        <label for="security">Security Code</label>
+        <input type="text" id="security" name="security" placeholder="Enter your unique code" />
+      </div>
+      <button class="login-button" type="submit">Login</button>
+    </form>
+    <div class="extras">
+      <a href="pass_forget_page.html">Forgot Password?</a>
+      <a href="account_page.html  ">Create Account</a>
+    </div>
+  </div>
+</body>
+</html>
